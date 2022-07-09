@@ -1,14 +1,49 @@
-First document
-
-Second change
 
 
 correct form on 29-06-2022
+// for showing the logged in username  in a web page USING LIQUID CODE
+<a> {{% user.firstname %%}}
 
+// sending json data in as request Using JAVASCRIPT XHRHTTPRequest() mehtod
+
+let xhr = new XMLHttpRequest();
+let url=https://prod-26.centralindia.logic.azure.com:443/workflows/d4217add8aa1445789310008f498131f/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=oaZpTzZj_0vNGZSMuL-Owje9-5mxQ7DtkSzVCt0Lo78;
+
+xhr.open('GET',url,true);
+	
+
+xhr.onload=function()
+{
+ 
+let xmldata=xhr.responseXML;
+let textdata = xhr.responseText;
+
+let data=JSON.parse(textdata);
+console.log(xmldata);
+console.log(textdata);
+console.log(data);
+}
+xhr.send();
+
+
+// converting data  present in variable recived via  html form  to  JAVASCRIPT JASON ,(key:value)pair  for sending to  automate's unique http url's body
+{
+	"AICTE": [{"Permanent id": "Pid"},
+		{"Institue id": "INid"},
+		{"Institue Region": "IRid"},
+		{"Institue District": "IDid"},
+		{"Name of Organization": "NOid"},
+		{"Mobile Number": "Nuid "},
+		{"Email id": "Eid"}
+
+	]
+}
 
 
 ---javascript---
 
+
+//JAVASCRIPT FUNCTION  to input values Using HTML ID in JAVASCRIPT variables on clicking  HTML submit button 
 
 
 function my_button_click_handler()
@@ -30,6 +65,9 @@ var Nuid = document.getElementById("NUid").value;
 var Eid = document.getElementById("Eid").value;
 var Syullabusid = document.getElementById("Syllabusid").value;
 
+
+//JAVASCRIPT STRINGY funcction() to convert JS variable to JS key value pair 
+
 JSON.stringify({"Permanent Id":"Pid","Institue Name ":"INid","Institue Region":"IRid","Institue State":"istate","Institue District" :"IDdiv","Name of Organization":"Noid","Name":"Number","NUid","Email":"EMid"}
 
 })
@@ -41,6 +79,8 @@ function favTutorial() {
    
    if(x== "0")
    {
+
+//Javascript's JQUERY's HIDE and DELETE functin to show HTML's ID ELEMENT
        
                  $("#state").hide();
                   $("#IRdiv").hide();
@@ -393,8 +433,11 @@ function favTutorial() {
    
    
     
-
+-------------------------------------------------------
 ---html---
+
+
+//Bootsraps's class col and row class to show grid.
 <form method="POST">
 <div class="container-fluid">
   <div class="header_main">
@@ -573,6 +616,8 @@ if(x== "4")
 }
 
 </script>
+
+//HTML 'S DIV CONTIANER AND IMG TAGS for creating form layout
 <div class="container-fluid">
 
     <div class="header_main">
@@ -636,6 +681,8 @@ if(x== "4")
 
 
                 <form>
+//HTML's  select to drop down 
+
             <select id = "myList" onchange = "favTutorial()" >
             <option> ---Choose Option--- </option>
             <option value = "1">AICTE Approved Autonomous Institute </option>
