@@ -1,9 +1,35 @@
-//changes
+
+
+
+
 //JAVASCRIPT STRINGY funcction() to convert JS variable to JS key value pair 
 
 JSON.stringify({"Permanent Id":"Pid","Institue Name ":"INid","Institue Region":"IRid","Institue State":"istate","Institue District" :"IDdiv","Name of Organization":"Noid","Name":"Number","NUid","Email":"EMid"}
 
 })
+
+
+
+// sending json data in as request Using JAVASCRIPT XHRHTTPRequest() mehtod
+
+var xhr = new XMLHttpRequest();
+var url="https://prod-14.centralindia.logic.azure.com:443/workflows/a820f3e69c8741378a800486ca53268b/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=APUO6cDuxWJvtji4HPiGTH_wui9EZAmRhTDcIf60wa8";
+
+
+xhr.open("POST",url,true);
+	
+
+xhr.onload=function()
+{
+    alert(Response);
+    var temp01= xhr.responseText;
+    alert(temp01);
+
+}
+xhr.send(data);
+
+}
+
 
 
 
