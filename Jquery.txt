@@ -1,0 +1,71 @@
+
+//Javascript's JQUERY's HIDE and DELETE functin to show HTML's ID ELEMENT
+       
+                 $("#state").hide();
+                  $("#IRdiv").hide();
+             $("#INdiv").hide();
+              $("#IDDiv").hide();
+
+                   $("#ID").hide();
+              $("#Nodiv").hide();
+    
+     }
+   if(x== "1")
+   {
+         alert('jquery run');
+         $("#state").show();
+         
+              $("#INdiv").show();
+                  $("#IRdiv").show();
+         
+            
+              $("#IDDiv").show();
+
+              $("#ID").show();
+              $("#Nodiv").hide();
+         }
+   
+   
+   if(x=="2")
+   {
+          $("#state").show();
+                  $("#IRdiv").hide();
+         
+              $("#INdiv").hide();
+              $("#IDDiv").hide();
+              $("#ID").hide();
+              $("#Nodiv").show();
+
+   
+   }
+   
+   if(x== "3")
+   {
+                  $("#state").show();
+                  $("#IRdiv").hide();
+         
+              $("#INdiv").hide();
+              $("#IDDiv").hide();
+              $("#ID").hide();
+              $("#Nodiv").hide();
+
+   }
+   
+   if(x== "4")
+   {
+                 $("#state").show();
+                  $("#IRdiv").hide();
+             $("#INdiv").hide();
+              $("#IDDiv").hide();
+
+                   $("#ID").hide();
+              $("#Nodiv").hide();
+
+   
+
+   }
+   
+  
+
+      
+}
