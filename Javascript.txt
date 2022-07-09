@@ -25,6 +25,10 @@ var Eid = document.getElementById("Eid").value;
 
 var  doc = document.getElementById("fileupload").files[0];
 
+
+
+//concept JAvascript Form data 
+
 const formData = new FormData();           
 formData.append("sample",doc) ;
 
@@ -38,6 +42,8 @@ var requestoptions= {
     headers=myheader,
     body=doc
 }
+
+//concept JAVASCRIPT FETCH FUNCTION TO Send form data 
 
  fetch("https://prod-12.centralindia.logic.azure.com:443/workflows/95d17e21ccf242fbbcd2f3d7a151299b/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=DNQysYaljfTu3_ZcNet0uKBiXVapyrcmI3rt6VaRttU",requestoptions{
     method: "POST",
