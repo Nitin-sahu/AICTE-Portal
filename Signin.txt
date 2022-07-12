@@ -1,0 +1,398 @@
+<script>
+
+
+
+//debugger;
+
+
+
+$('#content-container').addClass("logocl");
+
+setTimeout(function() {
+
+
+
+var tag = document.createElement("div");
+
+   var element = document.getElementById("content");
+
+   element.appendChild(tag);
+
+   $('#form-horizontal').addClass("frbutt");
+
+},1000)
+
+
+
+
+
+ document.body.style.backgroundImage = "linear-gradient(to bottom, rgb(255 255 188 / 70%), rgba(255, 252, 179, 0.7)), url(https://journalsofindia.com/wp-content/uploads/2020/11/All-India-Council-for-Technical-Education-AICTE.jpg)";
+
+ document.body.style.backgroundRepeat = "no-repeat";
+
+ document.body.style.backgroundSize = "cover";
+
+setTimeout(function()
+{
+	$("#content-container #content .page-content .row .col-md-6 form .form-horizontal ").attr('id', 'formhorizontalid');
+},0000);
+
+
+    $(document).ready(function() {
+
+var newdiv = document.createElement("div");
+
+
+newdiv.className="businessemail";
+
+// newdiv.innerHTML='<div> class="txt"><span id="Account">Don’t have account?</span><span id="create"><a href="#">Create new</a></span> </div>
+newdiv.innerHTML='<p id="txt">Dont have account ?<a href="window.location.href=~/new-page-4/" id="create"> Create One </a> </p>';
+
+var element = document.getElementById("formhorizontalid");
+
+element.appendChild(newdiv);
+
+});
+
+
+
+</script><div class="bkgrnd">
+	<div class="col-md-6">
+		<div class="logo"><img class="logo2" src="https://www.aicte-india.org/sites/default/files/logo_new.png"></div>
+		<title>Page Title</title>
+		<div class="Title">
+			<h1>Welcome to </h1>
+		</div>
+		<h2 class="subtitle" style="color:#005377;font-weight:700">AICTE</h2>
+		<div class="para" style="font-weight:400;font-size:16px">
+			<p>Planned and coordinated development of Technical Education<br> in the country by ensuring world-class standard of instituions<br>				through accreditation
+			</p>
+
+		</div>
+	</div>
+
+
+</div>
+
+<style>
+
+#create {
+    text-decoration: none;
+
+    color: #005377;
+}
+	#txt
+	{
+
+    text-align: center;
+    color: #969696;
+}
+	}
+		/* .body {
+		background-image: url("img_trial");
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100%;
+		width: 100%; */
+	}
+
+	//username
+	label.control-label.required {
+		position: absolute !important;
+		margin: 0px 0px 0px 113px !important;
+		top: -10px !important;
+		left: 22px !important;
+	}
+
+	#Username {
+		//  margin-left: 132px;
+	}
+#create{
+	text-decoration: none;
+}
+	.form-group {
+		width: 80%;
+		margin: auto;
+	}
+
+	.btn {
+		border: none !important;
+		width: 170px;
+		margin-top: -164px;
+		margin-left: 81px;
+		background: transparent;
+		font-size: 14px;
+	}
+
+	.btn btn-default {
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 21px;
+		color: #005377;
+	}
+#txt{
+	text-align: center;
+}
+	.form-horizontal .control-label {
+		text-align: left !important;
+		width: 134px;
+	}
+
+	.form-group label {
+		font-weight: 400 !important;
+		font-size: 15px !important;
+		line-height: 22px !important;
+		color: #575757 !important;
+		margin-left: -17px;
+	}
+
+	.checkbox {
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 21px;
+		color: #005377;
+	}
+
+	#RememberMe {
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 21px;
+		/* identical to box height */
+		color: #626262;
+	}
+
+	.form-control {
+		display: block;
+		width: 100%;
+		height: 35px;
+		margin-left: -17px;
+		padding: 6px 29px;
+		font-size: 15px;
+		line-height: 1.42857;
+		color: #555;
+		background-color: #fff;
+		background-image: none;
+		border: 1px solid #ccc;
+		border-radius: 0;
+		-webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+		box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+		-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+		-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+		transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	}
+
+	.login-heading-section {
+		border-bottom: none !important;
+		line-height: inherit;
+		margin-top: 68px;
+		margin-bottom: 7px;
+		margin-left: 30px;
+		color: #333;
+		font-weight: bold;
+		padding-bottom: 21px;
+		font-size: 20px;
+	}
+
+	.form-group {
+		display: grid;
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 22px;
+	}
+
+	.form-horizontal .form-group {
+		margin-left: 34px;
+		margin-right: 0px;
+	}
+
+	#local-login-heading {
+
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 42px;
+		color: #3A3A3A;
+		margin-bottom: 0px !important;
+		padding-bottom: 0px !important;
+		margin-top: 0px !important;
+	}
+
+
+
+	.btn-primary {
+
+		background: #005377;
+		border-radius: 4px;
+		margin-top: 27px;
+		margin-left: -20px;
+		width: 260px;
+	}
+
+	label.control-label.required {
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 22px;
+	}
+	/* identical to box height */
+
+	.footer.well {
+		display: none;
+	}
+
+	.navbar {
+		display: none !important;
+	}
+
+	.form-horizontal {
+		background: #fff;
+		border-radius: 10px;
+		width: 350px;
+		height: 350px;
+		padding: 20px 15px !important;
+	}
+
+	input.form-control {
+		width: 250px !important;
+	}
+
+	.col-sm-offset-4 {
+		margin-left: 0px !important;
+	}
+    label.control-label.required:before{
+        display:none !important;
+    }
+	/*.row{
+    background-repeat: no-repeat;
+
+    height:100%
+    width:100%;
+    background-image: url(https://static.theprint.in/wp-content/uploads/2021/02/aicte.jpg?compress=true&quality=80&w=376&dpr=2.6);
+    background-size: cover;
+}*/
+
+	//Display none
+	//navbar navbar-inverse navbar-static-top
+	.navbar.navbar.inverse.navbar.static-top {
+		display: none;
+	}
+
+
+	.xrm-attribute-value-encoded xrm-attribute-value {
+		/* margin: -34px; */
+		padding: 23px;
+		/* top: 29px; 
+    top: 999;
+
+
+.footer.well {
+    display: none;
+}
+
+.footer-bottom {
+    display: none;
+}
+
+<style type="text/css">
+.footer.well {
+    display: none;
+}
+.footer-bottom {
+    display: none;
+}
+.form-horizontal 
+{
+    float: right;
+    positon: absolute;
+    /* position: absolute; 
+    top: 15%;
+    left: 55%;
+    background: white;
+    border-radius: 2px;
+    display:none;
+}
+
+
+
+.col-md-6 {
+    /* width: 50%; */
+		float: right;
+		margin: -161px;
+		/* right: 5%; 
+    padding: -38%;
+}
+
+
+.navbar.navbar-inverse.navbar-static-top {
+    display: none;
+}
+
+
+.navbar-static-top .navbar-inverse {
+    background-color: #ffffff;
+    display: none;
+}
+.signbg{
+    //background-image:url('https://thumbs.dreamstime.com/b/white-laptop-blue-background-nearby-bank-card-miniature-airplane-concept-online-booking-air-tickets-travel-planning-222419262.jpg');
+    background-repeat: no-repeat;
+    height:100vh;
+}
+
+
+element.style {
+    display: none !important;
+}
+.logo2{
+	    height: 80px;
+    width: 250px;
+    position: absolute;
+    top: 8%;
+    left: 15%;
+	}
+ 
+ .Title
+ {
+font-weight: bold;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    font-weight:400;
+    font-size:64px;
+
+}
+  
+.subtitle{
+ color:#0000FF;
+ font-weight : bold;
+    position: absolute;
+    top: 45%;
+    left: 15%;
+ 
+  
+ }
+ 
+ .para{
+    position: absolute;
+    top: 60%;
+    left: 15%;
+}
+ 
+*/
+	}
+
+	.txt-non {
+		text-align: left !important;
+</style>
+
+
+
+
+
+    
+
