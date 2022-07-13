@@ -1,0 +1,142 @@
+<form method="POST" id="myform">
+<div class="container-fluid">
+  <div class="header_main">
+    <div class="logo"><img src="https://www.aicte-india.org/sites/default/files/logo_new.png"></div>
+    <div class="left_tabs">
+      <div class="homelogo"><img src="https://img.icons8.com/material-rounded/344/home.png" style="height: 79px;"><a href="window.location.href='~/new-page;">Home</a></div>
+      <div class="text"><span style="display: inherit; font-weight: 400; color: #696969;">Welcome</span> <a style="display: inherit; font-family: poppins; font-weight: 700; color: #005377;"> {{%user.firstname%}}</a></div>
+      <div class="loginpic"><img src="https://cdn-icons-png.flaticon.com/128/149/149071.png" style="height: 60px;"></div>
+    </div>
+  </div>
+  <div class="task_title" style="color: #3A3A3A; font-weight: 700; font-size: 24px; line-height: 36px; padding: 10px;">
+    Proposals for New Course Nomenclatures for APH 2022-23
+
+    <h1 id="demo">Here value will print :</h1>
+  
+
+    
+  </div>
+  <div class="task_container">
+    <div><span class="task_label" style="color: #005377; font-weight: 700; padding: 10px;">Basic Information</span></div>
+    <hr><br>
+    <div class="row">
+      <div class="col-md-6">
+        <div><span>Institute</span></div>
+      </div>
+      <div class="col-md-6">
+        <select id="myList" onchange="favTutorial()">
+            <option value="0"> ---Choose Option--- </option>
+            <option value="1">AICTE Approved Autonomous Institute </option>
+            <option value="2"> University </option>
+            <option value="3"> State DTE </option>
+            <option value="4"> State Higher Education Department </option>
+          </select>
+      </div>
+    </div><br>
+    <div id="IDDiv" class="row" style="display: none;">
+      <div class="col-md-6">
+        <div><label for="PI ">Permanent Id*:</label>
+          <h6>/* Note* In Case if AICTE permanent ID is not available please enter (AICTE Current Application ID) */</h6>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div><span><input type="text " id="Pid" placeholder="AICTE Permanent Id" name="fname "><a>Click here</a> to get permanent/current Application ID. 
+               </span></div>
+      </div>
+      <div class="col-md-2">
+        <div><span><button type="button" style="background: #005377; color: #FFFFFF;">Check</button></span></div>
+      </div>
+      </div>
+
+      <div id="INdiv" class="row">
+        <div class="col-md-6">
+          <div><span><label for="ID ">Institute Name *:</label></span></div>
+        </div>
+        <div class="col-md-6">
+          <div><span><input type="text " id="INid" placeholder="Enter AICTE ID and data will populate automatic" name="fname "></span></div>
+        </div>
+      </div>
+      
+      <br>
+      <div class="row" id="IRdiv">
+        <div class="col-md-6">
+          <div><span>Institute Region*</span></div>
+        </div>
+        <div class="col-md-6">
+          <div><span><input type="text " id="IRid" placeholder="Enter AICTE ID and data will populate automatic" name="fname "></span></div>
+        </div>
+      </div>
+      <br>
+
+      <div id="state" class="row">
+        <div class="col-md-6">
+          <div><span><label for="ID ">Institute State/UT's *:</label></span></div>
+        </div>
+        <div class="col-md-6">
+          <div><span><input type="text " id="istate" placeholder="Enter AICTE ID and data will populate automatic" name="fname "></span></div>
+        </div>
+      </div>
+      <br>
+      <div class="row" id="ID">
+        <div class="col-md-6">
+          <div><span><label for="ID ">Institute District *:</label></span></div>
+        </div>
+        <div class="col-md-6">
+          <div><span><input type="text " id="IDid" placeholder="Enter AICTE ID and data will populate automatic" name="fname "></span></div>
+        </div>
+      </div>
+  
+      <div id="Nodiv" class="row" style="display: none;">
+      <div class="col-md-6">
+        <div><span><label for="IN ">Name of Organization/University/Department*:</label></span></div>
+      </div>
+      <div class="col-md-6">
+        <div><span><input type="text " id="NOid" placeholder="Enter Organization/Department" name="fname "></span></div>
+      </div><br><br>
+     
+    </div>
+
+    
+  </div>
+</div><br><br>
+<!-- o -->
+<div class="task_container2"><br>
+  <div><span class="task_label" style="color: #005377; font-weight: 700; padding: 10px;">Details of Contact Person for any clarification regarding Syllabus / Course name :</span></div>
+  <hr><br>
+  <div class="row" id="Namediv">
+    <div class="col-md-6">
+      <div><label for="NP ">Name of Person*:</label></div>
+    </div>
+    <div class="col-md-6">
+      <div><span><input type="text " id="Nid" placeholder="Please Enter your Name" name="fname "><br><br></span></div>
+    </div><br>
+  </div>
+  <div class="row" id="MobileDiv">
+    <div class="col-md-6"><br>
+      <div><span><label for="MN "> Mobile Number*:</label></span></div>
+    </div>
+    <div class="col-md-6">
+      <div><span><input id="NUid" type="number " placeholder="Please Enter your Number" name="fname "></span></div>
+    </div><br>
+  </div>
+  <div class="row" id="Emailidiv">
+    <div class="col-md-6"><br>
+      <div><label for="EI ">Email Id*:</label></div>
+    </div>
+    <div class="col-md-6">
+      <div><span><input type="email " id="Eid" placeholder="Please Enter your EMAIL" name="fname "></span></div>
+    </div>
+  </div><br><br>
+  <div class="row" id="syllabysdiv">
+    <div class="col-md-6">
+      <div><label for="Ps ">Please upload copy of syllabus*:</label></div>
+    </div>
+    <div class="col-md-6">
+      <div><span><label for="myfile" style="background: #005377; color: #FFFFFF;"></label><input id="fileupload" type="file" accept=".pdf" placeholder="Please Enter your Name" name="fileupload" multiple=""><br><br></span></div>
+    </div>
+  </div><br><br>
+</div>
+
+
+<div class="btn"><button type="Submit" onclick="my_button_click_handler();">Press here</button> </div>
+</form>

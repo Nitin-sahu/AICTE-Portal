@@ -1,0 +1,163 @@
+Is CSS or HTML a programming language? 
+ No. CSS is a style sheet & HTML is a markup language. These aren't a programming language because it doesn't have any LOGICS.
+
+
+/*font of submit button
+ size of submit  button
+color of submit button
+formatting 
+position of submit button */ 
+	
+
+.btn
+{
+float:right;
+margin: 15px;
+   
+width: 100px;
+
+height: 40px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+
+
+background: #005377;
+
+border-radius: 4px; 
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 24px;
+gap: 10px;
+font-color:#FFFFFF;
+}
+.header_main{
+    display: flex;
+    justify-content: space-between;
+}
+.left_tabs
+{
+    display:flex;
+}
+.text
+{
+    padding: 29px;
+    
+}
+/* .loginpic */
+{
+    height: 76px;
+}
+
+/* .homelogo{ */
+    height: 44px;
+    padding: 15px;
+}
+    
+    
+.alert-danger
+     {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    display: none;
+}
+
+.h4{
+    display: none;
+}
+.navbar-static-top.navbar-inverse {
+    background-color: #ffffff;
+    display: none;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: none;
+}
+.footer.well {
+    color: #777;
+    border-left: none;
+    border-right: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 39px 0;
+    display: none;
+}
+    .input-wid {
+        width: 100%;
+    }
+
+    .task_container2 {
+    box-sizing: border-box;
+    /* position: absolute; 
+    height: 250px;
+    left: 80px;
+    right: 80px;
+    top: 50%;
+    padding: 50px; */
+    border: 1px solid #DFE8EC;
+    background: #FDFDFD;
+    border-radius: 4px;
+    margin:17px;
+}
+
+
+    .task_container {
+        box-sizing: border-box;
+       /* position: absolute;
+        height: 450px;
+        left: 80px;
+        right: 80px;
+        top: 20%;
+        
+        padding: 50px;*/
+        border: 1px solid #DFE8EC;
+        background: #FDFDFD;
+        border-radius: 4px;
+        padding: 18px;
+    }
+
+.task_Title {
+    /* height: 190px; */
+  /*  position: absolute;*/
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #3A3A3A;
+    /*left: 200px;
+    right: 80px;
+    top: 10%;*/
+}
+
+    .label {
+        color: position: absolute;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #005377;
+      /*  position: absolute;*/
+    }
+
+    .alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    display: none;
+}
+.btn:hover a{
+    color: #fff;
+    text-decoration: none;
+}
+.btn a{
+    color:#fff !important;
+}
