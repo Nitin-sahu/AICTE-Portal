@@ -1,0 +1,4 @@
+Mircrosoft portal Tool-
+Customizing the Registration CRM Portal Registration Page
+
+https://community.dynamics.com/crm/f/microsoft-dynamics-crm-forum/263073/customizing-the-registration-crm-portal-registration-page#:~:text=amount%20of%20time.-,To%20edit%20the%20profile%20form%2C%20go%20to%20Settings%3ECustomisations%3E,portal%20to%20see%20the%20changes.

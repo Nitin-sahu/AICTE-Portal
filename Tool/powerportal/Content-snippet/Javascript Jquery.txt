@@ -1,0 +1,17 @@
+1-// to add HTML  Id to a Html page by Traversing id"#" and classes "."  using Jquery
+
+
+		or
+
+2-IN HTML DOCUMNET Set the attribute and value:
+//https://www.w3schools.com/jquery/html_attr.asp#:~:text=The%20attr()%20method%20sets,the%20set%20of%20matched%20elements.
+
+
+$("#content-container #content .page-content .row .col-md-6 form .form-horizontal ").attr('id', 'formhorizontalid');
+
+
+3-//Add class to container div based on content
+
+//https://stackoverflow.com/questions/10922340/add-class-to-container-div-based-on-content
+
+$('#content-container').addClass("logocl");

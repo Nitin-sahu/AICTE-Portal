@@ -1,0 +1,57 @@
+-------------------HTML DOM
+
+1-Using HTML DOM Document createElement()
+/*Append a HTML Element in Precreated  HTml Page
+Append a Div in a variable  and add class*/
+
+//https://www.w3schools.com/jsref/met_document_createelement.asp
+
+
+var tag = document.createElement("div");
+
+   var element = document.getElementById("content");
+
+   element.appendChild(tag);
+
+   $('#form-horizontal').addClass("frbutt");
+
+
+
+
+var newdiv = document.createElement("div");
+
+
+newdiv.className="businessemail";
+
+
+/*Append a HTML Element to another Element
+ IN a Div , append a Parargh and href link */
+
+// newdiv.innerHTML='<div> class="txt"><span id="Account">Don’t have account?</span><span id="create"><a href="#">Create new</a></span> </div>
+newdiv.innerHTML='<p id="txt">Dont have account ?<a href="window.location.href=~/new-page-4/" id="create"> Create One </a> </p>';
+
+var element = document.getElementById("formhorizontalid");
+
+element.appendChild(newdiv);
+
+
+
+2- USing HTML DOM
+Set a background image for a document:
+
+//https://www.w3schools.com/jsref/prop_style_backgroundimage.asp
+
+ document.body.style.backgroundImage = "linear-gradient(to bottom, rgb(255 255 188 / 70%), rgba(255, 252, 179, 0.7)), url(https://journalsofindia.com/wp-content/uploads/2020/11/All-India-Council-for-Technical-Education-AICTE.jpg)";
+
+ document.body.style.backgroundRepeat = "no-repeat";
+
+ document.body.style.backgroundSize = "cover";
+
+
+
+
+3-IN HTML DOCUMNET Set the attribute and value:
+//https://www.w3schools.com/jquery/html_attr.asp#:~:text=The%20attr()%20method%20sets,the%20set%20of%20matched%20elements.
+
+
+$("#content-container #content .page-content .row .col-md-6 form .form-horizontal ").attr('id', 'formhorizontalid');
