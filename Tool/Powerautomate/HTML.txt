@@ -1,0 +1,6 @@
+
+Concept-HTTP Request Methods
+https://www.w3schools.com/tags/ref_httpmethods.asp
+
+HTTP Requests and Responses in a Flow Demo using Power Automate
+https://softchief.com/2021/07/12/http-requests-and-responses-in-a-flow-demo-using-power-automate/
