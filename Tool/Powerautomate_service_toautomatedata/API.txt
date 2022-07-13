@@ -1,0 +1,5 @@
+API
+https://aws.amazon.com/what-is/api/#:~:text=API%20stands%20for%20Application%20Programming,other%20using%20requests%20and%20responses.
+
+API used to integrate power portal to Power automate
+https://softchief.com/2021/07/12/http-requests-and-responses-in-a-flow-demo-using-power-automate/

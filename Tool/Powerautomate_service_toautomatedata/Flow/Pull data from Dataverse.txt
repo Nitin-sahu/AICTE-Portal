@@ -1,0 +1,4 @@
+DYNAMICS 365 POWER AUTOMATE
+Pulling the data from Dataverse into an external system using Power Automate
+
+https://xrmdynamicscrm.wordpress.com/2022/03/10/pulling-the-data-from-dataverse-into-an-external-system-using-power-automate/
