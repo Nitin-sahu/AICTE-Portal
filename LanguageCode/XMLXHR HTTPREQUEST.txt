@@ -1,0 +1,20 @@
+
+//Send JSon DATA  to a  URL using XHR function
+//https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
+//https://www.w3schools.com/xml/xml_http.asp
+
+var xhr = new XMLHttpRequest();
+var url="https://prod-14.centralindia.logic.azure.com:443/workflows/a820f3e69c8741378a800486ca53268b/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=APUO6cDuxWJvtji4HPiGTH_wui9EZAmRhTDcIf60wa8";
+
+
+xhr.open("POST",url,true);
+	
+
+xhr.onload=function()
+{
+    alert(Response);
+    var temp01= xhr.responseText;
+    alert(temp01);
+
+}
+xhr.send(data);

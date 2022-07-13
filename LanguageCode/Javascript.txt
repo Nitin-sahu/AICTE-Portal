@@ -1,0 +1,162 @@
+
+//JAVASCRIPT FUNCTION  to input values Using HTML ID in JAVASCRIPT variables on clicking  HTML submit button 
+
+
+function my_button_click_handler()
+{ 
+alert(' state data  submitted  ');
+
+
+//fetch data from variable to element
+
+var Pid = document.getElementById("Pid").value;
+
+var INid = document.getElementById("INid").value;
+
+
+var IRid = document.getElementById("IRid").value;
+document.getElementById("demo").innerHTML= "The value is : " +IRid;
+var istate = document.getElementById("istate").value;
+var IDid = document.getElementById("IDid").value;
+var NOid = document.getElementById("NOid").value;
+var Nid = document.getElementById("Nid").value;
+var Nuid = document.getElementById("NUid").value;
+var Eid = document.getElementById("Eid").value;
+
+var  doc = document.getElementById("fileupload").files[0];
+
+
+
+//concept JAvascript Form data 
+
+const formData = new FormData();           
+formData.append("sample",doc) ;
+
+var myheader = new Headers();
+myheader.append("data",);
+
+
+
+var requestoptions= {
+    method="POST",
+    headers=myheader,
+    body=doc
+}
+
+//concept JAVASCRIPT FETCH FUNCTION TO Send form data 
+
+ fetch("https://prod-12.centralindia.logic.azure.com:443/workflows/95d17e21ccf242fbbcd2f3d7a151299b/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=DNQysYaljfTu3_ZcNet0uKBiXVapyrcmI3rt6VaRttU",requestoptions{
+    method: "POST",
+    body: formData
+});
+   
+
+
+
+var data = JSON.stringify({"Permanent id":Pid,"Institue Name":INid,"Institue Region":IRid,"Institute state":istate,"Institue District":IDid,"Name of Organization":NOid,"Name":Nid,"Mobile number":Nuid,"Email Id":Eid});
+
+//var data = JSON.stringify({"Permanent id":Pid,"Institue ID":INid,"Institue Region":IRid,"Institue District":IRid,"Name of Organization":NOid,"Name":Nid,"Mobile Number":Nuid,"Email id":Eid});
+
+
+// sending json data in as request Using JAVASCRIPT XHRHTTPRequest() mehtod
+
+
+var xhr = new XMLHttpRequest();
+var url="https://prod-14.centralindia.logic.azure.com:443/workflows/a820f3e69c8741378a800486ca53268b/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=APUO6cDuxWJvtji4HPiGTH_wui9EZAmRhTDcIf60wa8";
+
+
+xhr.open("POST",url,true);
+	
+
+xhr.onload=function()
+{
+    alert(Response);
+    var temp01= xhr.responseText;
+    alert(temp01);
+
+}
+xhr.send(data);
+
+}
+
+function favTutorial() {
+   var mylist = document.getElementById("myList");
+   
+   
+   var x=mylist.options[mylist.selectedIndex].value;
+   
+   if(x== "0")
+   {
+       
+                 $("#state").hide();
+                  $("#IRdiv").hide();
+             $("#INdiv").hide();
+              $("#IDDiv").hide();
+
+                   $("#ID").hide();
+              $("#Nodiv").hide();
+    
+     }
+   if(x== "1")
+   {
+         alert('jquery run');
+         $("#state").show();
+         
+              $("#INdiv").show();
+                  $("#IRdiv").show();
+         
+            
+              $("#IDDiv").show();
+
+              $("#ID").show();
+              $("#Nodiv").hide();
+         }
+   
+   
+   if(x=="2")
+   {
+          $("#state").show();
+                  $("#IRdiv").hide();
+         
+              $("#INdiv").hide();
+              $("#IDDiv").hide();
+              $("#ID").hide();
+              $("#Nodiv").show();
+
+   
+   }
+   
+   if(x== "3")
+   {
+                  $("#state").show();
+                  $("#IRdiv").hide();
+         
+              $("#INdiv").hide();
+              $("#IDDiv").hide();
+              $("#ID").hide();
+              $("#Nodiv").hide();
+
+   }
+   
+   if(x== "4")
+   {
+                 $("#state").show();
+                  $("#IRdiv").hide();
+             $("#INdiv").hide();
+              $("#IDDiv").hide();
+
+                   $("#ID").hide();
+              $("#Nodiv").hide();
+
+   
+
+   }
+   
+  
+
+      
+}
+
+   
+   
+    
